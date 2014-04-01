@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Opscode by fnichol</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/fnichol/opscode">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/fnichol/opscode/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/fnichol/opscode/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Opscode</h1>
+          <p>An Infrastructure Code Workflow Tool</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/fnichol">fnichol</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><a href="http://badge.fury.io/rb/opscode"><img src="https://badge.fury.io/rb/opscode.png" alt="Gem Version"></a>
+<a href="https://travis-ci.org/fnichol/opscode"><img src="https://travis-ci.org/fnichol/opscode.png?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/fnichol/opscode"><img src="https://codeclimate.com/github/fnichol/opscode.png" alt="Code Climate"></a>
+<a href="https://gemnasium.com/fnichol/opscode"><img src="https://gemnasium.com/fnichol/opscode.png" alt="Dependency Status"></a></p>
+
+<p>Unify your source code management tools into a single development/release workflow that can be used by your entire team. Opscode is a minimal, zero dependency Ruby library that screams simplicity. Currently most major SCM tools are supported, including:</p>
+
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
+<li><a href="http://darcs.net/">Darcs</a></li>
+<li><a href="http://bazaar.canonical.com/">Bazaar</a></li>
+<li><a href="http://www.fossil-scm.org/index.html/doc/tip/www/index.wiki">Fossil</a></li>
+<li><a href="https://issues.apache.org/jira/plugins/servlet/mobile#issue/INFRA-7524">Subversion</a></li>
+<li><a href="http://www.nongnu.org/cvs/">CVS</a></li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'opscode'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install opscode
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>After installation, you will have an <code>opscode</code> command to run your various workflows.</p>
+
+<p>To check the installed version:</p>
+
+<pre><code>$ opscode version
+</code></pre>
+
+<p>Other commands depend on your chosen SCM tool. For example, using the default Git implementation:</p>
+
+<pre><code>$ opscode checkout https://github.com/opscode/chef.git
+</code></pre>
+
+<p>To use another SCM tool you will need to export an environment variable <code>OPSCODE_SCM</code>. For example, to use Subversion:</p>
+
+<pre><code>$ export OPSCODE_SCM=svn
+$ opscode checkout https://github.com/opscode/chef
+</code></pre>
+
+<p>More detailed usage depends on your SCM tool, but most will provide more information with:</p>
+
+<pre><code>$ opscode help
+</code></pre>
+
+<h2>
+<a name="development" class="anchor" href="#development"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<ul>
+<li>Source hosted at <a href="https://github.com/fnichol/opscode">GitHub</a>
+</li>
+<li>Report issues/questions/feature requests on <a href="https://github.com/fnichol/opscode/issues">GitHub Issues</a>
+</li>
+</ul><p>Pull requests are very welcome! Make sure your patches are well tested.
+Ideally create a topic branch for every separate change you make. For
+example:</p>
+
+<ol>
+<li>Fork the repo</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol><h2>
+<a name="-authors" class="anchor" href="#-authors"><span class="octicon octicon-link"></span></a><a name="authors"></a> Authors</h2>
+
+<p>Created and maintained by <a href="https://github.com/fnichol">Fletcher Nichol</a> (<a href="mailto:fnichol@nichol.ca">fnichol@nichol.ca</a>)</p>
+
+<h2>
+<a name="-license" class="anchor" href="#-license"><span class="octicon octicon-link"></span></a><a name="license"></a> License</h2>
+
+<p>Apache 2.0 (see <a href="https://github.com/fnichol/opscode/blob/master/LICENSE.txt">LICENSE.txt</a>)</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-29670723-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
