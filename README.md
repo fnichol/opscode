@@ -73,6 +73,16 @@ Created and maintained by [Fletcher Nichol][fnichol] (<fnichol@nichol.ca>)
 
 Apache 2.0 (see [LICENSE.txt][license])
 
+## FAQ
+
+* **"How would I start using this with my team?"**
+  Ummmmm... are you sure you want to?
+* **"Is this legit?"**
+  Ummmmm... does it look legit?
+* **"What features are on the roadmap?"**
+  Ummmmm... does this project need a roadmap?
+
+
 [license]:      https://github.com/fnichol/opscode/blob/master/LICENSE.txt
 [fnichol]:      https://github.com/fnichol
 [repo]:         https://github.com/fnichol/opscode
