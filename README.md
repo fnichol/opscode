@@ -1,9 +1,9 @@
 # Opscode: An Infrastructure Code Workflow Tool
 
 [![Gem Version](https://badge.fury.io/rb/opscode.png)](http://badge.fury.io/rb/opscode)
-[![Build Status](https://travis-ci.org/fnichol/opscode.png?branch=master)](https://travis-ci.org/fnichol/opscode)
+[![Build Status](https://travis-ci.org/fnichol/opscode.svg?branch=master)](https://travis-ci.org/fnichol/opscode)
 [![Code Climate](https://codeclimate.com/github/fnichol/opscode.png)](https://codeclimate.com/github/fnichol/opscode)
-[![Dependency Status](https://gemnasium.com/fnichol/opscode.png)](https://gemnasium.com/fnichol/opscode)
+[![Dependency Status](https://gemnasium.com/fnichol/opscode.svg)](https://gemnasium.com/fnichol/opscode)
 
 Unify your source code management tools into a single development/release workflow that can be used by your entire team. Opscode is a minimal, zero dependency Ruby library that screams simplicity. Currently most major SCM tools are supported, including:
 
