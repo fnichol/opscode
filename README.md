@@ -15,6 +15,7 @@ Unify your source code management tools into a single development/release workfl
 * [Subversion](https://issues.apache.org/jira/plugins/servlet/mobile#issue/INFRA-7524)
 * [CVS](http://www.nongnu.org/cvs/)
 * [Perforce](http://www.perforce.com/)
+* [Team Foundation Server](http://msdn.microsoft.com/en-us/vstudio/ff637362.aspx)
 
 ## Installation
 
