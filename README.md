@@ -14,6 +14,7 @@ Unify your source code management tools into a single development/release workfl
 * [Fossil](http://www.fossil-scm.org/index.html/doc/tip/www/index.wiki)
 * [Subversion](https://issues.apache.org/jira/plugins/servlet/mobile#issue/INFRA-7524)
 * [CVS](http://www.nongnu.org/cvs/)
+* [Perforce](http://www.perforce.com/)
 
 ## Installation
 
